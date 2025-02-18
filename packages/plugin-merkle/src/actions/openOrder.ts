@@ -56,10 +56,10 @@ export default {
 	name: "OPEN_ORDER",
 	similes: [
     "FUTURES_TRADE",
-    "OPEN_MARKET_ORDER",-
+    "OPEN_MARKET_ORDER",
 		"OPEN_LIMIT_ORDER",
 		"BUY_LONG",
-		"BUT_SHORT",
+		"BUY_SHORT",
 		"OPEN_POSITION",
 		"PLACE_ORDER",
 	],

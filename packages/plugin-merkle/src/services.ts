@@ -247,7 +247,7 @@ export class MerkleService {
 	async getSummary() {
     try {
       const cachedSummary = this.cache.get<Summary>(`${this.cacheKey}/summary`);
-      if (cachedSummary) {;
+      if (cachedSummary) {
         return cachedSummary;
       }
       const summary = await this.client.getSummary();

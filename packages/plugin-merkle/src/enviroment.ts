@@ -4,10 +4,10 @@ import { z } from "zod";
 export const merkleTradeEnvSchema = z.object({
 	MERKLE_TRADE_NETWORK: z
 		.string()
-		.min(1, "Merkle Aptos private key is required"),
-	MERKLE_TRADE_APTOS_ACCOUNT_ADDRESS: z
+		.min(1, "Merkle Aptos network is required"),
+    MERKLE_TRADE_APTOS_PRIVATE_KEY: z
 		.string()
-		.min(1, "Merkle Aptos account address is required"),
+		.min(1, "Merkle Aptos private key is required"),
 });
 
 export type MerkleTradeConfig = z.infer<typeof merkleTradeEnvSchema>;
